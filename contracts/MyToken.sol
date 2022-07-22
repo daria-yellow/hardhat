@@ -8,8 +8,8 @@ contract MyToken is ERC20Upgradeable {
 
     event BuyToken(address indexed sender, uint256 tokenAmount, uint256 price);
 
-    uint _tokenPrice = 0.000007 ether;
-    address _address = 0xA4465b289842FB8FA856b28236825220202FDe68;
+    uint public _tokenPrice = 0.000007 ether;
+    address public _address = 0xA4465b289842FB8FA856b28236825220202FDe68;
 
     function initialize() initializer public {
         __ERC20_init("My", "MY");
